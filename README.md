@@ -1,50 +1,108 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛒 Cart — Shopping Cart Application
 
-Currently, two official plugins are available:
+A React + TypeScript shopping cart SPA built with Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[!TypeScript](https://www.typescriptlang.org/)
+[!React](https://react.dev/)
+[!Vite](https://vitejs.dev/)
+[!ESLint](https://eslint.org/)
+[!License](LICENSE)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+> ⚠️ Learning Project — This project was built to practice React with TypeScript and modern build tooling with Vite.
 
-- Configure the top-level `parserOptions` property like this:
+***
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📋 About the Project
+
+Cart is a shopping cart single-page application built with React 18, TypeScript, and Vite. It serves as a learning project for building interactive UIs with modern React patterns and fast development workflows.
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| React 18 | Latest React with concurrent features |
+| TypeScript | Full type safety throughout the app |
+| Vite 6 | Lightning-fast HMR and build times |
+| SWC Compiler | Fast JSX/TypeScript compilation |
+| ESLint | Code quality and consistency |
+
+## 🏗️ Architecture
+
+```
+cart/
+├── src/
+│   ├── App.tsx        # Main application component
+│   ├── main.tsx       # Entry point
+│   └── ...
+├── vite.config.ts     # Vite configuration
+├── tsconfig.json      # TypeScript configuration
+├── eslint.config.js   # ESLint configuration
+└── package.json
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite 6 with SWC plugin
+- **Linting:** ESLint 9 with React hooks and refresh plugins
+- **Module System:** ES Modules
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js >= 18
+- pnpm (recommended)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/cart.git
+cd cart
+
+# Install dependencies
+pnpm install
 ```
+
+### Running the Application
+
+```bash
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm preview      # Preview production build
+pnpm lint         # Run ESLint
+```
+
+## 📦 Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start Vite development server |
+| `pnpm build` | TypeScript check + production build |
+| `pnpm preview` | Preview production build |
+| `pnpm lint` | Run ESLint |
+
+## 📄 License
+
+This project is licensed under the MIT License. See LICENSE for more details.
+
+***
+
+## 👤 Author
+
+**Carlos Clemant**
+
+[!GitHub](https://github.com/your-username)
+[!LinkedIn](https://linkedin.com/in/your-profile)
+
+***
+<div align="center">
+
+If you found this project helpful, give it a ⭐!
+
+</div>
